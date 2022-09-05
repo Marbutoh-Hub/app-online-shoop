@@ -1,0 +1,414 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+.none {
+  margin-left: 30px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.renone {
+  transition: 1s;
+}
+
+.navigasi {
+  box-shadow: 2.6px 5.3px 5.3px hsl(0deg 0% 0% / 0.42);
+}
+
+.store {
+  font-family: "Fredoka One", cursive;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  /* border: solid black 2px; */
+}
+
+.behind {
+  position: absolute;
+  margin-left: 30%;
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  box-shadow: 3.8px 7.7px 7.7px hsl(0deg 0% 0% / 0.38);
+}
+
+.about {
+  transition: 1s;
+  margin-left: -700px;
+  display: none;
+}
+
+.sidebar {
+  width: 10%;
+  height: 300px;
+  transition: 2s;
+  margin-left: -500px;
+  margin-top: 20px;
+}
+
+.sidebarclick {
+  width: 10%;
+  height: 250px;
+  transition: 1s;
+  margin-left: 40px;
+  margin-top: 20px;
+  background: rgba(140, 139, 139, 0.5);
+  border: 2px solid black;
+  box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.9);
+}
+
+.close {
+  border: 2px solid rgb(29, 29, 29);
+}
+
+.account {
+  height: 70px;
+  width: 70px;
+}
+.contact {
+  height: 30px;
+  width: 30px;
+}
+
+.product {
+  height: 70px;
+  width: 70px;
+  border: 2px solid black;
+}
+.drawer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  margin-right: 8px;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.banner {
+  width: 80%;
+  height: 420px;
+  margin-top: 39px;
+  margin-right: 90px;
+  box-shadow: 3.8px 7.7px 7.7px hsl(0deg 0% 0% / 0.38);
+  -ms-transform: rotate(-8deg); /* Support IE 9 */
+  -webkit-transform: rotate(-8deg); /* support Safari */
+  transform: rotate(-8deg); /* Standard syntax */
+}
+
+.shadow-font {
+  text-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.4);
+}
+
+.ikon {
+  display: flex;
+  margin-top: -26px;
+  justify-content: flex-start;
+  width: 50%;
+  margin-left: -15px;
+}
+
+.sosmed {
+  margin-top: 10%;
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+  width: 400px;
+  margin-left: 30px;
+  font-family: "Fredoka One", cursive;
+  /* border: 2px solid black; */
+  padding: 2px;
+}
+
+.drawer-instagram {
+  display: flex;
+  /* border: 2px solid black; */
+  width: 100px;
+  height: 100px;
+  margin-left: 83px;
+  margin-top: -40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.drawer-shopee {
+  display: flex;
+  /* border: 2px solid black; */
+  width: 250px;
+  height: 100px;
+  margin-left: 165px;
+  margin-top: -40px;
+  align-items: center;
+  justify-content: start;
+  position: absolute;
+}
+
+.icon-instagram {
+  width: 50px;
+  height: 50px;
+  box-shadow: 2.6px 5.3px 5.3px hsl(0deg 0% 0% / 0.42);
+}
+
+.icon-shopee {
+  width: 50px;
+  height: 50px;
+  box-shadow: 2.6px 5.3px 5.3px hsl(0deg 0% 0% / 0.42);
+}
+
+.label-instagram {
+  height: 30px;
+  width: 200px;
+  margin-left: 270px;
+  margin-top: 200px;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  /* border: 2px solid black; */
+}
+
+.label-shopee {
+  position: absolute;
+  display: none;
+  width: 200px;
+  margin-left: 80px;
+  margin-top: 200px;
+  opacity: 0;
+  /* border: 2px solid black; */
+}
+
+.car {
+  display: none;
+}
+
+.phone-disbann {
+  display: none;
+}
+
+.thumbnail {
+  display: none;
+}
+
+/* login modal */
+
+.card-login {
+  padding: 20px;
+  width: 100%;
+  margin: 5px 2px 5px 2px;
+  border: 2px solid rgb(32, 22, 61);
+  background-color: rgb(170, 170, 170);
+  box-shadow: 2.6px 5.3px 5.3px hsl(0deg 0% 0% / 0.42);
+  margin-bottom: 40px;
+}
+
+.card-registrasi {
+  padding: 20px;
+  width: 100%;
+  margin: 5px 2px 5px 2px;
+  border: 2px solid rgb(32, 22, 61);
+  background-color: rgb(170, 170, 170);
+  box-shadow: 2.6px 5.3px 5.3px hsl(0deg 0% 0% / 0.42);
+  margin-bottom: 40px;
+}
+
+.label-product {
+  color: #f0f0f0;
+}
+
+#label_login {
+  display: block;
+}
+
+#card_login {
+  display: block;
+}
+
+#form_login {
+  display: block;
+}
+
+#label_registrasi {
+  display: none;
+}
+
+#card_registrasi {
+  display: none;
+}
+#form_registrasi {
+  display: none;
+}
+
+.glow {
+  color: #444;
+  text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc, 3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
+}
+
+/* akhir login modal */
+
+/* CSS ADMIN */
+.notif {
+  border: 2px solid rgb(15, 32, 183);
+  margin-top: 36px;
+  position: absolute;
+  display: none;
+}
+.option {
+  border: 2px solid rgb(15, 32, 183);
+  margin-top: 34px;
+  position: absolute;
+  margin-left: -29px;
+  display: none;
+  z-index: 99;
+}
+
+.menu_mobile {
+  display: none;
+}
+
+/* .tmp-dashboard {
+  display: none;
+} */
+/* END CSS ADMIN */
+
+@media screen and (max-width: 400px) {
+  .content {
+    display: flex;
+    height: 750px;
+    /* border: 2px solid black; */
+  }
+  .menu_mobile {
+    display: block;
+  }
+  .header {
+    display: none;
+  }
+  .behind {
+    display: none;
+    border: 2px solid black;
+  }
+
+  .banner {
+    display: none;
+    border: 2px solid black;
+  }
+
+  .about {
+    transition: 2px;
+    margin-right: 100px;
+    margin-top: 300px;
+    display: none;
+  }
+
+  .sidebar {
+    margin-top: 150px;
+    width: 15%;
+    height: 400px;
+    transition: 1s;
+    margin-left: -200px;
+    margin-top: 400px;
+    border: 2px solid black;
+  }
+
+  .sidebarclick {
+    margin-top: 300px;
+    width: 42%;
+    height: 110px;
+    transition: 1s;
+    margin-left: 8px;
+    background: rgba(140, 139, 139, 0.5);
+    border: 2px solid black;
+  }
+
+  .thumbnail {
+    display: block;
+  }
+
+  .drawer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid black; */
+  }
+
+  .label {
+    font-size: 12px;
+    display: none;
+    border: 2px solid black;
+  }
+  .account {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+  }
+  .product {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+  }
+
+  .car {
+    /* margin-top: 150px; */
+    margin-top: 5px;
+    position: absolute;
+    /* border: 2px solid black; */
+    height: 270px;
+    width: 100%;
+    padding: 5px;
+    display: block;
+  }
+
+  .phone-disbann {
+    position: absolute;
+    margin-top: 270px;
+    padding: 5px;
+    /* border: 2px solid black; */
+    width: 57%;
+    margin-left: 43%;
+    display: block;
+  }
+
+  .search {
+    width: 170%;
+    height: 40px;
+    margin-left: -75%;
+    border: 2px solid rgb(66, 23, 75);
+    display: block;
+  }
+
+  .drawer-shopee {
+    width: 100px;
+  }
+
+  .sosmed {
+    margin-left: -80px;
+  }
+  .fm {
+    display: none;
+  }
+
+  .tumbnail {
+    border: 2px solid black;
+    height: 100%;
+    display: block;
+  }
+
+  .iconsearch {
+    display: block;
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 180px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    display: none;
+  }
+}
