@@ -37,31 +37,31 @@
           <div class="row mt-2 ms-1">
             <ul class="list-group mt-2 mb-2">
               <div class="border border-success border-2 menu_admin">
-                <li class="list-group-item" aria-current="true" id="beranda">
+                <li class="list-group-item web" aria-current="true" id="beranda">
                   <span><img src="\public\direct\img\iccon_admin\home.svg" alt="" /></span>
                   <h6>
                     <small> Beranda </small>
                   </h6>
                 </li>
-                <li class="list-group-item list-group-item-success" id="transaksi">
+                <li class="list-group-item web list-group-item-success" id="transaksi">
                   <span><img src="\public\direct\img\iccon_admin\transaction.svg" alt="" /></span>
                   <h6>
                     <small>Transaksi </small>
                   </h6>
                 </li>
-                <li class="list-group-item" id="display">
+                <li class="list-group-item web" id="display">
                   <span><img src="\public\direct\img\iccon_admin\display.svg" alt="" /></span>
                   <h6>
                     <small>Display</small>
                   </h6>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item web" id="order">
                   <span><img src="\public\direct\img\iccon_admin\order.svg" alt="" /></span>
                   <h6>
                     <small> Order</small>
                   </h6>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item web" id="customer">
                   <span><img src="\public\direct\img\iccon_admin\customer.svg" alt="" /></span>
                   <h6>
                     <small>Customer</small>
@@ -137,7 +137,7 @@
                       </li>
                     </div>
                     <div class="col">
-                      <li class="list-group-item">
+                      <li class="list-group-item"  id="order-m">
                         <span><img src="\public\direct\img\iccon_admin\order.svg" alt="" /></span>
                         <h6>
                           <small> Order</small>
@@ -145,7 +145,7 @@
                       </li>
                     </div>
                     <div class="col">
-                      <li class="list-group-item">
+                      <li class="list-group-item"  id="customer-m">
                         <span><img src="\public\direct\img\iccon_admin\customer.svg" alt="" /></span>
                         <h6>
                           <small>Customer</small>
@@ -276,6 +276,7 @@
       $("#beranda").on("click",function () {
           $("#inc-content").load("beranda.html");
           $("#title-dashboard").replaceWith("<h4 id='title-dashboard'>Beranda</h4>");
+          select();
        });
        $("#transaksi").on("click",function () {
           $("#inc-content").load("transaksi.html");
@@ -285,6 +286,27 @@
           $("#inc-content").load("display.html");
           $("#title-dashboard").replaceWith("<h4 id='title-dashboard'>Display</h4>");
        });
+       $("#order").on("click",function () {
+          $("#inc-content").load("order.html");
+          $("#title-dashboard").replaceWith("<h4 id='title-dashboard'>Order</h4>");
+       });
+       $("#customer").on("click",function () {
+          $("#inc-content").load("customer.html");
+          $("#title-dashboard").replaceWith("<h4 id='title-dashboard'>Customer</h4>");
+       });
+
+       select = function(){
+        var objects = $(".list-group-item-success");
+        for (var obj of objects) {
+            console.log(obj);
+            // $(obj).removeClass(".list-group-item-success");
+            obj = $(".web");
+            for (var o of obj) {
+              o.removeClass("list-group-item-success");
+            }
+        }
+
+       }
     </script>
     <script>
       $("#beranda-m").on("click", function () {
@@ -298,6 +320,14 @@
       $("#display-m").on("click", function () {
         $("#inc-content").load("display.html");
         $("#title-dashboard").replaceWith("<h4 id='title-dashboard'>Display</h4>");
+      });
+      $("#order-m").on("click", function () {
+        $("#inc-content").load("order.html");
+        $("#title-dashboard").replaceWith("<h4 id='title-dashboard'>Order</h4>");
+      });
+      $("#customer-m").on("click", function () {
+        $("#inc-content").load("customer.html");
+        $("#title-dashboard").replaceWith("<h4 id='title-dashboard'>Customer</h4>");
       });
     </script>
     <script src="/public/direct/js/admin.js"></script>
