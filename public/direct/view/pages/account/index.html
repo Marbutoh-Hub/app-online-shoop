@@ -35,15 +35,15 @@
             </div>
           </div>
           <div class="row mt-2 ms-1">
-            <ul class="list-group mt-2 mb-2">
+            <ul class="list-group mt-2 mb-2 target_menu">
               <div class="border border-success border-2 menu_admin">
-                <li class="list-group-item web" aria-current="true" id="beranda">
+                <li class="list-group-item web" id="beranda">
                   <span><img src="\public\direct\img\iccon_admin\home.svg" alt="" /></span>
                   <h6>
                     <small> Beranda </small>
                   </h6>
                 </li>
-                <li class="list-group-item web list-group-item-success" id="transaksi">
+                <li class="list-group-item web" id="transaksi">
                   <span><img src="\public\direct\img\iccon_admin\transaction.svg" alt="" /></span>
                   <h6>
                     <small>Transaksi </small>
@@ -294,19 +294,15 @@
           $("#inc-content").load("customer.html");
           $("#title-dashboard").replaceWith("<h4 id='title-dashboard'>Customer</h4>");
        });
+    </script>
+    <script>
+      let selector = '.target_menu li';
+      $(selector).on("click",function(){
+        $(selector).removeClass('list-group-item-success');
+        $(this).addClass('list-group-item-success');
+      })
+      
 
-       select = function(){
-        var objects = $(".list-group-item-success");
-        for (var obj of objects) {
-            console.log(obj);
-            // $(obj).removeClass(".list-group-item-success");
-            obj = $(".web");
-            for (var o of obj) {
-              o.removeClass("list-group-item-success");
-            }
-        }
-
-       }
     </script>
     <script>
       $("#beranda-m").on("click", function () {
