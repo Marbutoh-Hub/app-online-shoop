@@ -121,7 +121,7 @@
                       </li>
                     </div>
                     <div class="col">
-                      <li class="list-group-item list-group-item-success" id="transaksi-m">
+                      <li class="list-group-item" id="transaksi-m">
                         <span><img src="\public\direct\img\iccon_admin\transaction.svg" alt="" /></span>
                         <h6>
                           <small>Transaksi </small>
@@ -296,12 +296,15 @@
     </script>
     <script>
       let selector = '.target_menu li';
+      let selector2 = '.menu_mobile li';
       $(selector).on("click",function(){
         $(selector).removeClass('list-group-item-success');
         $(this).addClass('list-group-item-success');
       })
-
-
+      $(selector2).on("click",function(){
+        $(selector2).removeClass('list-group-item-success');
+        $(this).addClass('list-group-item-success');
+      })
     </script>
     <script>
       $("#beranda-m").on("click", function () {
