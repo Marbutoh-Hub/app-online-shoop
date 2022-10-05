@@ -1,5 +1,7 @@
 <html lang="en">
-  <head> </head>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  </head>
   <body>
     <div class="container customer">
       <div class="row">
@@ -10,7 +12,7 @@
                 <h6>Data Customer</h6>
               </div>
               <div class="col-sm-8">
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn btn-sm btn-primary">
                   <img src="\public\direct\img\iccon_admin\back.svg" alt="" />
                   <span>Back</span>
                 </button>
@@ -19,34 +21,12 @@
           </header>
         </div>
       </div>
-      <div class="row mt-4">
-        <div class="col">
-          <table id="#table-customer" class="table table-bordered border-info">
-            <thead class="table-info">
-              <tr>
-                <th scope="col">No</th>
-                <th scope="col">Nama</th>
-                <th scope="col">Jenis Customer</th>
-                <th scope="col">Detail</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      <div class="row mt-4" id="list-customer"></div>
     </div>
+    <script>
+      $(document).ready(function () {
+        $("#list-customer").load("../../../view/Beranda/total-customer/list.html");
+      });
+    </script>
   </body>
 </html>
