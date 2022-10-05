@@ -271,6 +271,14 @@ body {
   display: none;
 }
 
+/* css beranda */
+
+#header-customer > h6 {
+  color: rgb(38, 38, 176);
+  font-size: 1.2rem;
+}
+/* akhir css beranda */
+
 /* .tmp-dashboard {
   display: none;
 } */

@@ -10,7 +10,7 @@
               <div class="card-body" id="order">
                 <h5 class="card-title">Total Customer</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-info">Go somewhere</a>
+                <a id="total-customer" href="#" class="btn btn-info">Detail</a>
               </div>
             </div>
           </div>
@@ -35,5 +35,11 @@
         </div>
       </div>
     </div>
+    <script>
+      $("#total-customer").on("click", function () {
+        $("#inc-content").load("../../Beranda/total-customer/index.html");
+        $("#title-dashboard").replaceWith("<h4 id='title-dashboard'>Total Customer</h4>");
+      });
+    </script>
   </body>
 </html>

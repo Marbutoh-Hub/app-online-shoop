@@ -167,3 +167,12 @@ closeAbout.addEventListener("click", function () {
 });
 
 // akhir js product
+
+// Beranda JS
+// btnTotalCustomer = document.getElementById("total-customer");
+
+// btnTotalCustomer.addEventListener("click", function () {
+//   alert("bangsat");
+// });
+
+// Akhir Beranda Js
