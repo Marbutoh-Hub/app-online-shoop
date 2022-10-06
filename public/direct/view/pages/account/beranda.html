@@ -9,7 +9,7 @@
             <div class="card">
               <div class="card-body" id="order">
                 <h5 class="card-title">Total Customer</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">Customer</p>
                 <a id="total-customer" href="#" class="btn btn-info">Detail</a>
               </div>
             </div>
@@ -28,7 +28,7 @@
               <div class="card-body">
                 <h5 class="card-title">Total Penjualan</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-success">Go somewhere</a>
+                <a id="total-penjualan" href="#" class="btn btn-success">Detail</a>
               </div>
             </div>
           </div>
@@ -43,6 +43,10 @@
       $("#total-pendapatan").on("click", function () {
         $("#inc-content").load("../../Beranda/total-pendapatan/index.html");
         $("#title-dashboard").replaceWith("<h4 id='title-dashboard'>Total Pedapatan</h4>");
+      });
+      $("#total-penjualan").on("click", function () {
+        $("#inc-content").load("../../Beranda/total-penjualan/index.html");
+        $("#title-dashboard").replaceWith("<h4 id='title-dashboard'>Total Penjualan</h4>");
       });
     </script>
   </body>
